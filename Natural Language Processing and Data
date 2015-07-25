@@ -1,0 +1,22 @@
+Natural Language Processing and Data
+
+Where do you start?
+1. Identify your dataset
+2. Identify the tools you will need
+3. Decide whether your report will be automated or ad hoc
+	The timing of your reports matter - daily reports won't actually give you a lot of value
+	You want to match your sprint cadence
+
+A little bit of python and SQL can make you a bit of a human powerhouse
+
+Mehodology used in Text Mining
+Catergrization of features:
+- Cluster analysis
+Sentiment analysisit
+Time series analysis - you can identify changes over time, matching against releases or other changes
+Lexical dispersion - maintains the word order, so you can see how the use of words change over time, as well. How many times did you see "difficult" "won't let me" over time?
+
+Infomratin Retrieval:
+Bag of words - top 25 or so words, finding the comments that use those words -  can point you to the right, most common type of comment/feeback to read and study
+Search functionality
+
