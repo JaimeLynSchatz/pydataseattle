@@ -20,3 +20,27 @@ Infomratin Retrieval:
 Bag of words - top 25 or so words, finding the comments that use those words -  can point you to the right, most common type of comment/feeback to read and study
 Search functionality
 
+Unsupervised machine learning - throw it at the computer ansd see what they make of it
+Hierarchical clustering
+K-means clustering
+- Sci-kit and NLTK offer easy to use modules for K-means clustering
+Maximum Entropy (sometimes classified ad supervised)
+
+
+Supervised Machine Learning
+A classifer is supervised if it's built on training corpora
+Naive Bayes Classifiers
+- a probablistic classifier
+Decision Trees
+ ... 
+
+ Machine learning sentiment analysis is considered good if it's 60-65% (sometimes up to 70%) accurate to human eyes. There's room for growth there!
+
+ Security + improved sentiment analysis + facial recognition ... there's some awesome work still to be done here.
+
+ There's lots of room to work on it - you'll be here.
+
+ Lexicons sometimes require human input to rate or score the dictionary -- or you can do it automatically using seed words to expand a list of words
+
+ 
+
