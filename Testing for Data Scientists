@@ -1,0 +1,67 @@
+#Testing for Data Scientists
+Ned Batchelder "Getting Started Testing" from PyCon 2014 - go watch it
+
+ETL - Extracting, Transform and Load
+Tests should be happening at each step because you're making assumptions at each step
+Tests help you check your assumptions becuase it makes your assumptions explicit
+
+##Unit tests
+##Regression tests
+##Integration tests
+
+###Test libraries
+py.test
+unittest, unittest2  # from Java, all class-based
+nose
+
+###Tools
+fixtures
+mock
+
+import pytest
+
+def test_mean():
+    assert(mean([1, 2, 3, 4, 5]) == 2)  # this should fail - make sure it does
+
+##Test the outcome, not the implementation.
+That way refactoring won't break your code.
+
+####Overfitting - what can happen with TDD. It can put your blinders on and you don't catch your assumptions.
+
+###Test the properties - don't try to think up weird test cases
+####engarde - Tom Augspurger for "defensive" data analysis
+Make assumptions about the data shape and type - then test against that
+- def compuer, has some decorators,t aht make assumptions explicit
+tests dataframes
+
+####hypothesis testing suite
+randomly generate data and run a bunch of tests. You give it some specs and then throw that at the code under test
+
+Test probabalistcally
+
+faker - 
+http://vengefulpickle.com/posts/hypothesis.html
+https://www.google.com/search?q=hypothesis+data+science+testing+suite+generate+random+data+for+testing+import+hypothesis+import+given&oq=hypothesis+data+science+testing+suite+generate+random+data+for+testing+import+hypothesis+import+given&aqs=chrome..69i57.23310j0j4&sourceid=chrome&es_sm=91&ie=UTF-8
+
+feature forge
+declare feature schemas and test them
+
+look for faker in python
+
+Probablilitic testing
+Model testing is the wild west
+
+engard: is_monotonic(), within_n_std(), within_set()
+
+Don't test algorithms you haven't personally implemented - if it's third party, it's been tested
+If yo uhave implementing an algorithm, TEST IT
+pandas, SciPy, NumPy have testing tools - learn them and love them
+
+
+MCMC code @tdhopper
+Continuous Integration - tests run every time you check in
+@digitallogic
+
+bit.ly/testing_algorithms - READ IT
+
+

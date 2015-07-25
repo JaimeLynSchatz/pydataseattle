@@ -1,0 +1,77 @@
+##Tools
+Torch
+Caffe
+Theano - lower level, sophisticated, pylean and lasagne are good tools that build on top of this
+Graphlab-Create (Data, Inc)
+Under Aactive develppment:
+- Neon (Nervana Systems)
+-DeepLearning4J runing on Apache Spark (possbily will plug in to pyspark)
+
+##Network Topologies
+Applications and examples
+Conolutional Neural Networks - concolutional layer
+MNIST and LeNet since the 80s, handwiritng recogition
+ImageNet and AlexNet
+- Computer vision
+
+##Convolution
+A two dimensional version of reduce
+
+abstracting the features as you go up the neural network
+Image of AlexNet
+Think of the reverse of the abstraction "shortcut" in InsideOut
+Classifies pictures
+
+##Deep Dream in Seattle
+Importing code from Caffe and loading it in with the code from google for Deep Dream live demo
+
+##Recurrent Neural Network
+Good at elarning sequences of words/characters/anything
+"Plain valinlla" RNNs
+Long Short Tem Memory Netowrk
+Different relationships between layers
+one to one 
+one to many
+many to one
+many to many
+many to many
+
+##Word2Vec: Neural network for finding high dimensional representation per word
+Skip-gram model, froma  word - predict nearby words in sentence
+Take a sentence, map the words to the schema
+
+##Ulysses on Fire with Torch
+Teaching a copmuter to write like James Joyce. Trained on Ullyses, ran through three times and you get some language that looks right. It learned puncutation, perpositional phrases, a little bit of formatting. 
+
+Recursive Neiral Tnsor Networds
+Captures natual languege's recursive nature and ... 
+DeepLearningInNaturalLanguageProcessing.html on nlp.standord.edu/projects/
+Parsing natural Scene Images similar to parsing natural langauge senentences
+
+##Deep Unsupervised Leanring
+this is what I want to do!
+
+QuocNet
+Images of what a computer thinks a face and a cat looks like
+
+Transfer Learning
+Old idea from Donahue and others
+Trained the computer, then cut off the labelled picutres and then looked at awhat the computer dows.
+
+Image Similarity Service
+Take a pre-trained neural net and propagate images.
+
+#Deep Reinforcement Learning
+Trained the computer how to play a game with reinforcing. They were as good as human game testers.
+
+Visualization
+##Caffe has great vsualizaiton tolls for cisualizaing what happens to an image when you're going through a dep neural net
+There are notebooks that show you step by step whatn it's doing
+
+
+Pitfalls
+We've still got a lot of learning to do
+Major pitfalls in deep learning
+Models are hard to interpret. We can find ways to fool them to understand what they're doing.
+That both shows you what the model s doing and make sthe computer much smarter and the models much better and stronger
+
