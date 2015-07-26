@@ -1,0 +1,53 @@
+#Big Data Analytics - The Best of the Worst
+Krishna Sankar @ksankar
+http://www.slideshare.net/ksankar/big-data-analytics-best-of-the-worst-antipatterns-antidotes
+
+
+Known Knowns
+Known Unknowns
+Unknown Knowns
+Unknowns Unknowns
+
+Volume Velocity Variety
+
+Coontext Connectedness
+
+Interface Inerence Intelligence
+
+Too much information is less helpful than too little. (sort of)
+
+Check this out: http://www.slideshare.net/joshwills/production-machine-learninginfrastructure
+
+Waterline data - data curation
+Data quality and data linkage
+Publish the schemas!!
+Semantic consistency 
+Data Gravity and Data Mass - Not Data Molasses
+https://www.google.com/search?q=data+gravity+and+data+mass&oq=data+gravity+and+data+mass&aqs=chrome..69i57.5574j0j4&sourceid=chrome&es_sm=91&ie=UTF-8
+
+You've got all this data - you need to build your data system bits to business. Collecting data, building inferences, great. The business needs to look at it and be able to do something with it.
+
+MVP: http://www.gokartlabs.com/blog/3-new-ways-to-think-about-mvp/
+
+Data Pipelines are important - the data has to flow through, similar emsatintics so it can be used and compared
+
+##Statistical Significance need not mean business significance
+
+Outliers aren't really outliers - they're just the things we're not paying attentiaon to
+
+https://www.gov.uk/design-principles
+1 Start with needs*
+2 Do less
+3 Design with data
+4 Do the hard work to make it simple
+5 Iterate. Then iterate again.
+6 This is for everyone
+7 Understand context
+8 Build digital services, not websites
+9 Be consistent, not uniform
+10 Make things open: it makes things better
+
+Analytics isn't alchemy
+https://homes.cs.washington.edu/~pedrod/papers/cacm12.pdf
+http://www.johnwittenauer.net/a-few-useful-things-to-know-about-machine-learning/
+
