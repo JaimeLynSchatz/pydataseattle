@@ -1,0 +1,51 @@
+#Machine Learning and Systems
+
+Also see: http://www.slideshare.net/JoshuaBloom/data-literacy-45528174
+
+Mature systems as 5% machine learning code, 95% is glue code (from google article below)
+http://static.googleusercontent.com/media/research.google.com/en//pubs/archive/43146.pdf
+
+Inside Out: algorithms, software, hardware, layer of hardware around the hardware, project staff, consumers (someone wants the info/data/learning/intelligence), organizaiton and society: there's societal impact on whatever you're doing with ML.
+
+
+Each level of abstraction is hurt by the decisions made at the layer below it.
+
+What's the essence of what I care about?
+What's the question - not just what's the most perfect algorithm.
+
+False positives vs. missed detection is very different when talking about inter-cranial pressure in the ermgency ward and drone targeting. One, you can't have any missed detections and the latter, you don't want any false positives.
+
+http://techblog.netflix.com/2012/04/netflix-recommendations-beyond-5-stars.html
+
+read your get pcoket quuee
+
+Build DS workflow on test set, like the offline testing accuacy
+then deploy and start monotiring results
+then online accuracy is worse than expected
+What to do:
+1. band head to find overfitting in model
+2. retrain - more data means better model
+3. Doncept drift: if retraining doen't help, jigger the DS workflow
+4. Or may ... prediciton influenced outcome (hold our some live -- think about the STripe talk - if you dn't let what you think are fraudulent transactions through then your data is going to look different.)
+
+AA testing and AB testing is relevent t this, too
+
+Engarde Hypothesis, Feature Forge testing tools
+Is the data changinging? Is that effecting the outcomes due to chnages
+
+Model deployement testing: alert a human if things are too different than before. AND use automated tools to try to isolate cuase of chnage - data or code???
+
+Wise WindTunnel
+
+Fault Tolerant ML
+augmentation vs. full automation
+
+
+https://www.google.com/search?q=pie-shaped+people+vs.+gamma+shaped+people&oq=pie-shaped+people+vs.+gamma+shaped+people&aqs=chrome..69i57.7655j0j7&sourceid=chrome&es_sm=91&ie=UTF-8
+
+http://icml.cc/2015/invited/LeonBottouICML2015.pdf
+
+Build an ML system only becuase you have to - not (just) because it's fun.
+###End user fault tolerance is  MUST
+
+
