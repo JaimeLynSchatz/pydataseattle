@@ -1,0 +1,104 @@
+#Low Friction NLP with gensim
+
+NLTK is the big player
+gensim can be augmented with NLTK
+
+Userful for large-ish data
+
+STREAMING
+
+###From words to vectors
+Document 1: This is a document.
+[("this", 1), ("is", 1), ("not", 0), ("a", 1), ("document", 1)]
+Document 2: This is not a document
+[("this", 1), ("is", 1), ("not", 1), ("a", 1), ("document", 1)]
+
+
+Vector Space Model - word count
+Standard Boolean Model is another way
+
+###TF*IDF - term frequency * inverse document frequency
+This will call out he "not" - appears only once across the docs
+
+###Models/Transoformations
+Decompositions: Vecrtor Representation inlower dimensional space (PCA is in play here) - searching
+Probabilistic: Topic, Document, Word, likelihoods - a little more interpretable
+
+###LDA Latent Dirichlet Allocation
+
+A person as a collection of actions - developing personas from the individuals
+
+Word2Vec - quereying similarity, dubious interpretation
+arxiv.org/pdf/1301.3781.pdf
+CBOW - continuous bag of words: using the surrounding words to predict the word
+Skip-gram - the map helps you determin the word
+
+###Other tools instead of gensim
+They all require a lot of setup to use. Gensim is pure python, import into your code and just use it
+- scikit-learn less focused on language
+- vowpal wabbit http://hunch.net/~vw/
+- spark
+- mallet
+
+###Gensim
+https://radimrehurek.com/gensim/index.html
+It has an LGPL license: be a good citizen
+
+Hoffman 2010 - mechanism for streaming data for LDA
+
+###Don't read the whole file into memory
+
+import smart_open
+
+def yield_file(filename):
+	for line in smart_open.smart_open(filename):
+		yield line
+
+
+from gensim import corpora
+
+docs = [["my", "doc"], ["your", "doc]]"
+
+dictionary = corpora.Dictionary(docs)
+
+class TheCorpus(object):
+	def __iter__(self):   # override the iterator
+		for doc in docs:
+			yield dictionary.doc2bow(docs)  # bow = bag of words
+
+
+model = ModelName(corpus, **kwargs)  # kwargs will be model-specific
+model[new_doc]  # the output will be whatever the nlp model you're using produces
+
+###Models
+model.save(fname)
+model.load(fname)
+
+###Corpora
+corpora.SvmLightCorpus
+corpora.BleiCorpus
+corpora.LowCorpus
+
+###Text Cleaning # if you need more, goe to NLTK (stop words, lemming, more robust in NLTK)
+tockenize("Hi, there.")
+["hi", "there"]
+
+decode_htmlentitites stripping, etc
+
+##Demo Time
+Word2Vec
+similarity methods - most_similar_cosmul, most_similar, n_similarity, doesnt_match
+
+The vectors are on a term basis - averaging word vectors tends not to work
+###Doc2Vec Can Help There
+
+Modelling scientific topics over time  http://people.cs.umass.edu/~mccallum/papers/tot-kdd06.pdf
+
+preprocessing ------> model/transformation
+You have your doc, you need to turn it into something later
+
+Querying and Analysis
+What you can do with the vecs and such that you have
+
+Will be in a GitHub repo coming up soon :D
+
