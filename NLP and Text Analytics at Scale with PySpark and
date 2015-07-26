@@ -1,0 +1,61 @@
+#NLP and Text Analytics at Scale with PySpark and Notebooks
+
+Paco Nathan, @pacoid
+O'Reilly Leanring
+http://www.slideshare.net/pacoid
+
+You can translate SQL queries into python (kind of like Linq in C#)
+
+##GraphX
+Set of notes and set of edges tat connect them - GraphX
+RDD of the nodes
+RDD of the edges
+Compose a graph out of that
+
+see Kraggle paper from google
+
+spark.agache.org/docs/latest/graphx-programming-guide.html
+
+val node RDD: RDD lotsof code ...
+In Scala
+
+###Dijkstra Algorithm -- look it up
+
+many graphs can be converted into sparse matrices
+
+Graph analytics - you can convert it into a matrix
+
+Tensor Renaissance in Data Science
+Spacey Randowm Walks and Hgher Order Markov chains
+
+###TextBlob - a wrapper on NLTK for NLP when you first start extracting your data
+segment into sentences
+tag and lemmatize the words (build a tree bank, word net - use those)
+sentiment analysis
+generate skip-grams, a grpah of words that show up next to each other
+If you run a page rank on those graphs, you can see what phrases have a higher rank and might represent the overall meaning better.
+
+see his slides for a link to the data if you want to try this out some
+
+the jupyter notebook is in the open source project
+
+##I want to write a sentiment analysis of different programmer conferences or somehting
+Compare StackOverflow, Girl Develop It, Railsbridge, Clojure Bridge, find the people on twitter --- may be see how different people communicate on different platforms??
+
+##For the sentiment analysis - hide the names behind id numbers to prevent any kind of human interference and then I can publish and hide names and be all good about all of that.
+
+##Another thing to try: can a computer identify people by what they're working on in Github and what they talk about on other social media things (twitter, tumblr, meetup, linkedin) Would need to find a way to kill any identifable information but that might be pretty cool, too
+
+##Or train two or more twitter bots on text from StackOverflow, MeetUp, Mothering.com?? or Fox news pls MotherJones and set them loose and see what happens????
+
+Automated document summarization
+Kind common keywords and pull out the bits that tend to surround those phrases
+extract them and aggregate the page ranks together
+
+Rada Mihalcea and Paul somebody for TextRank
+http://web.eecs.umich.edu/~mihalcea/papers.html
+
+A social graph is a little more helpful than a K rnaks of who's talking the most often
+
+Connected componenets - can search for cliqueues in a group
+
