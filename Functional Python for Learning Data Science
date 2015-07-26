@@ -1,2 +1,39 @@
 #Functional Python for Learning Data Science
 @joelgrus
+
+http://joelgrus.github.io/thinking-spreadsheet/
+Devour this!!
+
+functions
+avoiding side effects
+first class fucntions
+laziness
+immitability
+
+xs = [1, 2, 3]
+it = iter(xs)
+ next(it) # will give you 1
+ next(it) # will give you 2
+
+Just throws you out when you don't have a next to grad
+
+def lazy_intergers(n=0):
+while True:
+yield n
+n+= 1
+
+xs = lazy_integers()
+
+##itertools
+from itertools import count
+count([start=0], [step=1])
+islice(seq, [start=0], stop, [step=1])
+ from itertools import tee
+ tee(it, [n=2])
+
+ https://docs.python.org/2/library/itertools.html
+
+ GET A NEW MIC FOR YOUR CELLPHONE to take conference calls in the car better - make sure it has a mute and pickup button on the device.
+
+ AUTHD for 50% off his book at oreilly!!
+ https://github.com/joelgurs/stupid-itertools-tricks-pydata

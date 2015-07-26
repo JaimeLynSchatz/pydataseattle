@@ -1,0 +1,59 @@
+#Swarm Intelligence Optimization Using Python
+James McCaffrey - Microsoft Research, Advanced Development
+
+##Classical Numberical Optimization
+- has issues with where errors can sneak in
+##Amoeba Method Optimization
+- worst - btest - other
+Take three potential solutions
+Abandon the worst, then try again, following the average between the best and the other
+"Simplex optimization", sometimes called Nelder-Mead algorithm
+It's not really an algorithm, but a heuristic
+Best and worst are caluculated based on the Euclidean distance
+simplex: has three points, it's a triangle (more or less)
+You're measuring the error based on the training data
+
+https://en.wikipedia.org/wiki/Nelder%E2%80%93Mead_method
+
+Faults: Local optima (well, all of them)
+This one just doesn't work sometimes. It depends heavily on initialization (where the points start from)
+
+
+##Particlce Swarm Optimization
+This became a hint for swarm optimization
+
+Start with trying to solve the sphere function - everything can solve it. If yours can't, the algorithm has a problem!!
+
+Velocity - where will the partileend up next in the next iteration
+
+learning rate, momentum in neural networks - they're constants that when you tune them, can make your algorithm blow up.
+The wieghts or conttancts in the particle swarm optimixation is a little less sensitive to changes in those weights.
+
+Rastrigin's Function
+Another benchmark function
+
+A common technicque is to have particles die off if they're getting stuck or are low performers, then you give birth to new ones at a new location. 
+
+##Simlated Bee Colony Optimixation
+Combinatorical optimzation rahter than numberical optimixation
+Eac bee has a path and an associated error
+scouts randomly search
+
+The standard benchmark problem is the travelling salesman problem. Goal - visit each city in the shortest distance possible
+
+
+Genetic Algorithms - numerical
+Ant Colony Optimization - cominatorial models ant foraging, graph path problems only
+Baterial Foraging Optimization - numberical, models several behaviors of bacterium
+Firefly Algorithm Optimization - numberical, models firlesly bioluminiscence and motion, multi-modal
+Simiilated Annealing - combinatorial models cooling metal - not a swarm technique
+
+Takeaway - if normal (calculous or matricies aren't feasible), then use swarm methonds.
+
+Swarm solutions take a lo to fo processing power.
+
+It's an interesting thing - swarm intelliegence optimization typically can't be proven with formal mathematical proofs, BUT 
+##Summary
+##Resources
+
+
